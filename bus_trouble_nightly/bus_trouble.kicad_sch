@@ -1,0 +1,137 @@
+(kicad_sch (version 20210621) (generator eeschema)
+
+  (uuid dfd0b6a3-e694-47bd-bd40-910d9f5c9f05)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (bus (pts (xy 68.58 48.26) (xy 78.74 48.26))
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (uuid d8595c7d-e3eb-478c-8ba5-94843d138e0b)
+  )
+  (bus (pts (xy 78.74 48.26) (xy 78.74 82.55))
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (uuid e3e04005-620f-452e-95af-1d9c66635516)
+  )
+  (bus (pts (xy 81.28 58.42) (xy 92.71 58.42))
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (uuid 09a16db3-b850-4a6f-ae06-352cdd36cfc4)
+  )
+  (bus (pts (xy 81.28 76.2) (xy 92.71 76.2))
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (uuid cfd07bb8-dbd2-4334-9aaf-f5db78099135)
+  )
+
+  (text "Would expect that SIG[0..3] go to first read4 block\nand that SIG[4..7] go to second read4 block\n\nIn KiCAD 5.1 this generates DRC errors and an incorrect netlist"
+    (at 48.26 34.29 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 18b3e572-6cce-4784-8c91-00776fe73421)
+  )
+
+  (label "SIG[0..7]" (at 71.12 48.26 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid fe238123-9c5e-4288-8e04-c126277c8665)
+  )
+  (label "SIG[0..3]" (at 82.55 58.42 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid a1da4b9b-e08a-49bb-9c08-d28e62f579a8)
+  )
+  (label "SIG[4..7]" (at 82.55 76.2 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b6f346e6-1f2b-497c-b910-4ecb5c125c9a)
+  )
+
+  (sheet (at 46.99 43.18) (size 21.59 11.43) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-0000611c16bd)
+    (property "Sheet name" "connector" (id 0) (at 46.99 42.5445 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "connector.kicad_sch" (id 1) (at 46.99 55.1185 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "SIG[0..7]" output (at 68.58 48.26 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid cb6cbde8-5f74-4038-b96c-3e52b3d433e0)
+    )
+  )
+
+  (sheet (at 92.71 53.34) (size 12.7 8.89) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-0000611c331b)
+    (property "Sheet name" "read4_1" (id 0) (at 92.71 52.7045 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "read4.kicad_sch" (id 1) (at 92.71 62.7385 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "IN[0..3]" input (at 92.71 58.42 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 4f6b69d1-df21-48a5-8c24-70a4b418505b)
+    )
+  )
+
+  (sheet (at 92.71 71.12) (size 12.7 8.89) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-0000611c4a49)
+    (property "Sheet name" "sheet611C4A49" (id 0) (at 92.71 70.4845 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "read4.kicad_sch" (id 1) (at 92.71 80.5185 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "IN[0..3]" input (at 92.71 76.2 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid b515cb18-bac1-419b-b29f-8d7061858e3b)
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/00000000-0000-0000-0000-0000611c16bd" (page "2"))
+    (path "/00000000-0000-0000-0000-0000611c331b" (page "3"))
+    (path "/00000000-0000-0000-0000-0000611c4a49" (page "4"))
+  )
+
+  (symbol_instances
+    (path "/00000000-0000-0000-0000-0000611c331b/00000000-0000-0000-0000-0000611c44b8"
+      (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611c4a49/00000000-0000-0000-0000-0000611c44b8"
+      (reference "#PWR0102") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611c16bd/00000000-0000-0000-0000-0000611c1beb"
+      (reference "J1") (unit 1) (value "Conn_01x08") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611c331b/00000000-0000-0000-0000-0000611c382a"
+      (reference "R1") (unit 1) (value "R_Small") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611c331b/00000000-0000-0000-0000-0000611c3c42"
+      (reference "R2") (unit 1) (value "R_Small") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611c331b/00000000-0000-0000-0000-0000611c3da2"
+      (reference "R3") (unit 1) (value "R_Small") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611c331b/00000000-0000-0000-0000-0000611c3f0a"
+      (reference "R4") (unit 1) (value "R_Small") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611c4a49/00000000-0000-0000-0000-0000611c382a"
+      (reference "R5") (unit 1) (value "R_Small") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611c4a49/00000000-0000-0000-0000-0000611c3c42"
+      (reference "R6") (unit 1) (value "R_Small") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611c4a49/00000000-0000-0000-0000-0000611c3da2"
+      (reference "R7") (unit 1) (value "R_Small") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611c4a49/00000000-0000-0000-0000-0000611c3f0a"
+      (reference "R8") (unit 1) (value "R_Small") (footprint "")
+    )
+  )
+)
