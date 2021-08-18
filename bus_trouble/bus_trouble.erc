@@ -1,0 +1,39 @@
+ERC report (Wed 18 Aug 2021 11:38:12 AM EDT, Encoding UTF8 )
+
+***** Sheet /
+
+***** Sheet /connector/
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(5.850 in, 3.750 in): Pin 5 (Passive) of component J1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(5.850 in, 3.850 in): Pin 6 (Passive) of component J1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(5.850 in, 3.950 in): Pin 7 (Passive) of component J1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(5.850 in, 4.050 in): Pin 8 (Passive) of component J1 is unconnected.
+
+***** Sheet /read4_1/
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(4.500 in, 3.550 in): Pin 1 (Power input) of component #PWR0101 is not driven (Net 1).
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(4.300 in, 2.900 in): Pin 2 (Passive) of component R5 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(4.300 in, 3.050 in): Pin 2 (Passive) of component R6 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(4.300 in, 3.200 in): Pin 2 (Passive) of component R7 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(4.300 in, 3.350 in): Pin 2 (Passive) of component R8 is unconnected.
+
+***** Sheet /sheet611C4A49/
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(4.500 in, 3.550 in): Pin 1 (Power input) of component #PWR0101 is not driven (Net 1).
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(4.300 in, 2.900 in): Pin 2 (Passive) of component R5 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(4.300 in, 3.050 in): Pin 2 (Passive) of component R6 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(4.300 in, 3.200 in): Pin 2 (Passive) of component R7 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(4.300 in, 3.350 in): Pin 2 (Passive) of component R8 is unconnected.
+
+ ** ERC messages: 14  Errors 0  Warnings 14

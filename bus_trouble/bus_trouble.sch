@@ -14,40 +14,38 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1850 1700 850  450 
+S 1850 700  850  450 
 U 611C16BD
 F0 "connector" 50
 F1 "connector.sch" 50
-F2 "SIG[0..7]" O R 2700 1900 50 
+F2 "SIG[0..7]" O R 2700 900 50 
 $EndSheet
 $Sheet
-S 3650 2100 500  350 
+S 3650 1100 500  350 
 U 611C331B
 F0 "read4_1" 50
 F1 "read4.sch" 50
-F2 "IN[0..3]" I L 3650 2300 50 
+F2 "IN[0..3]" I L 3650 1300 50 
 $EndSheet
 $Sheet
-S 3650 2800 500  350 
+S 3650 1800 500  350 
 U 611C4A49
 F0 "sheet611C4A49" 50
 F1 "read4.sch" 50
-F2 "IN[0..3]" I L 3650 3000 50 
+F2 "IN[0..3]" I L 3650 2000 50 
 $EndSheet
 Wire Bus Line
-	2700 1900 3100 1900
+	2700 900  3100 900 
 Wire Bus Line
-	3200 2300 3650 2300
+	3200 1300 3650 1300
 Wire Bus Line
-	3200 3000 3650 3000
-Text Label 3250 2300 0    50   ~ 0
+	3200 2000 3650 2000
+Text Label 3250 1300 0    50   ~ 0
 SIG[0..3]
-Text Label 3250 3000 0    50   ~ 0
+Text Label 3250 2000 0    50   ~ 0
 SIG[4..7]
-Text Label 2800 1900 0    50   ~ 0
+Text Label 2800 900  0    50   ~ 0
 SIG[0..7]
 Wire Bus Line
-	3100 1900 3100 3250
-Text Notes 1900 1350 0    50   ~ 0
-Would expect that SIG[0..3] go to first read4 block\nand that SIG[4..7] go to second read4 block\n\nIn KiCAD 5.1 this generates DRC errors and an incorrect netlist
+	3100 900  3100 2250
 $EndSCHEMATC
